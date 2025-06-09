@@ -1,0 +1,17 @@
+D:\homeworke\CoffeeMachine\bin\Debug\net8.0-windows\CoffeeMachine.exe
+D:\homeworke\CoffeeMachine\bin\Debug\net8.0-windows\CoffeeMachine.deps.json
+D:\homeworke\CoffeeMachine\bin\Debug\net8.0-windows\CoffeeMachine.runtimeconfig.json
+D:\homeworke\CoffeeMachine\bin\Debug\net8.0-windows\CoffeeMachine.dll
+D:\homeworke\CoffeeMachine\bin\Debug\net8.0-windows\CoffeeMachine.pdb
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.Form1.resources
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.Properties.Resources.resources
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.csproj.GenerateResource.cache
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.GeneratedMSBuildEditorConfig.editorconfig
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.AssemblyInfoInputs.cache
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.AssemblyInfo.cs
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.csproj.CoreCompileInputs.cache
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.dll
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\refint\CoffeeMachine.dll
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.pdb
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\CoffeeMachine.genruntimeconfig.cache
+D:\homeworke\CoffeeMachine\obj\Debug\net8.0-windows\ref\CoffeeMachine.dll
