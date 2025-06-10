@@ -7,7 +7,7 @@ namespace CoffeeMachine
         static int orderCount = 0;
         static string size = "small";
         public Form1()
-        {           
+        {
             InitializeComponent();
         }
 
@@ -55,19 +55,22 @@ namespace CoffeeMachine
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("Please enter your name.","Error!");
+                MessageBox.Show("Please enter your name.", "Error!");
                 return;
             }
             if (comboBox1.SelectedItem == null)
             {
-                MessageBox.Show("Please select a drink.","Error!");
+                MessageBox.Show("Please select a drink.", "Error!");
                 return;
             }
             if (!radioButton1.Checked && !radioButton2.Checked && !radioButton3.Checked)
             {
-                MessageBox.Show("Please select a size.","Error!");
+                MessageBox.Show("Please select a size.", "Error!");
                 return;
             }
+            Thread.Sleep(100);
+            while (progressBar1.Value < 100) progressBar1.Increment(1);
+            Thread.Sleep(100);
             orderCount++;
             textBox2.Text = orderCount.ToString();
             string drink = comboBox1.SelectedItem.ToString();
@@ -76,19 +79,19 @@ namespace CoffeeMachine
             string ice;
             if (checkBox1.Checked)
             {
-                sugar = "with sugar ";
+                sugar = "with milk ";
             }
             else
             {
-                sugar = "without sugar ";
+                sugar = "without milk ";
             }
             if (checkBox2.Checked)
             {
-                milk = "with milk ";
+                milk = "with sugar ";
             }
             else
             {
-                milk = "without milk ";
+                milk = "without sugar ";
             }
             if (checkBox3.Checked)
             {
@@ -98,7 +101,8 @@ namespace CoffeeMachine
             {
                 ice = "without ice";
             }
-            MessageBox.Show($"{textBox1.Text} ordered a {size} {drink} {sugar}, {milk}, {ice}.","Order");
+            MessageBox.Show($"{textBox1.Text} ordered a {size} {drink} {sugar}, {milk}, {ice}.", "Order");
+            progressBar1.Value = 0;
         }
     }
 }

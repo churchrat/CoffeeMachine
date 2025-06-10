@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             comboBox1 = new ComboBox();
             radioButton1 = new RadioButton();
@@ -42,6 +44,8 @@
             pictureBox1 = new PictureBox();
             label3 = new Label();
             textBox2 = new TextBox();
+            toolTip1 = new ToolTip(components);
+            progressBar1 = new ProgressBar();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -64,6 +68,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(305, 23);
             comboBox1.TabIndex = 1;
+            toolTip1.SetToolTip(comboBox1, "Choose beverage!");
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // radioButton1
@@ -75,6 +80,7 @@
             radioButton1.TabIndex = 2;
             radioButton1.TabStop = true;
             radioButton1.Text = "Small";
+            toolTip1.SetToolTip(radioButton1, "Choose small drink.");
             radioButton1.UseVisualStyleBackColor = true;
             radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
@@ -87,6 +93,7 @@
             radioButton2.TabIndex = 3;
             radioButton2.TabStop = true;
             radioButton2.Text = "Medium";
+            toolTip1.SetToolTip(radioButton2, "Choose medium drink.");
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
@@ -99,6 +106,7 @@
             radioButton3.TabIndex = 4;
             radioButton3.TabStop = true;
             radioButton3.Text = "Large";
+            toolTip1.SetToolTip(radioButton3, "Choose Large drink.");
             radioButton3.UseVisualStyleBackColor = true;
             radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
@@ -110,6 +118,7 @@
             checkBox1.Size = new Size(49, 19);
             checkBox1.TabIndex = 5;
             checkBox1.Text = "Milk";
+            toolTip1.SetToolTip(checkBox1, "Add Milk");
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
@@ -121,6 +130,7 @@
             checkBox2.Size = new Size(56, 19);
             checkBox2.TabIndex = 6;
             checkBox2.Text = "Sugar";
+            toolTip1.SetToolTip(checkBox2, "Add Sugar");
             checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -131,6 +141,7 @@
             checkBox3.Size = new Size(41, 19);
             checkBox3.TabIndex = 7;
             checkBox3.Text = "Ice";
+            toolTip1.SetToolTip(checkBox3, "Add Ice");
             checkBox3.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -159,6 +170,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(246, 23);
             textBox1.TabIndex = 10;
+            toolTip1.SetToolTip(textBox1, "Enter your name:");
             // 
             // pictureBox1
             // 
@@ -168,6 +180,7 @@
             pictureBox1.Size = new Size(192, 144);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
+            toolTip1.SetToolTip(pictureBox1, "This is your drink!");
             // 
             // label3
             // 
@@ -186,6 +199,21 @@
             textBox2.Size = new Size(161, 23);
             textBox2.TabIndex = 13;
             textBox2.Text = "0";
+            toolTip1.SetToolTip(textBox2, "How many dinks you have ordered.");
+            // 
+            // toolTip1
+            // 
+            toolTip1.AutomaticDelay = 0;
+            toolTip1.AutoPopDelay = 5000;
+            toolTip1.InitialDelay = 0;
+            toolTip1.ReshowDelay = 100;
+            // 
+            // progressBar1
+            // 
+            progressBar1.Location = new Point(103, 415);
+            progressBar1.Name = "progressBar1";
+            progressBar1.Size = new Size(161, 16);
+            progressBar1.TabIndex = 14;
             // 
             // Form1
             // 
@@ -193,6 +221,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.image_2025_06_09_215511049;
             ClientSize = new Size(367, 665);
+            Controls.Add(progressBar1);
             Controls.Add(textBox2);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
@@ -208,6 +237,8 @@
             Controls.Add(comboBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Form1";
             Text = "CoffeeMachine";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -231,5 +262,7 @@
         private PictureBox pictureBox1;
         private Label label3;
         private TextBox textBox2;
+        private ToolTip toolTip1;
+        private ProgressBar progressBar1;
     }
 }
